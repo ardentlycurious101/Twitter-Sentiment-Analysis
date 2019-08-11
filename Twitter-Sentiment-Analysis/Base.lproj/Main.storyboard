@@ -21,10 +21,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-Mu-Ogh" userLabel="Middle Container">
                                 <rect key="frame" x="0.0" y="304" width="414" height="128"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-GU-QeM" userLabel="searchTextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-GU-QeM" userLabel="searchTextField">
                                         <rect key="frame" x="15" y="15" width="384" height="98"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -42,21 +42,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fb-fe-HL5" userLabel="Top Container">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="304"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-K4-xKz">
-                                        <rect key="frame" x="157" y="102" width="100" height="100"/>
-                                        <color key="backgroundColor" red="0.96653825039999997" green="0.85139685870000004" blue="0.43127506970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="3gR-0Z-npN"/>
-                                            <constraint firstAttribute="height" constant="100" id="DmZ-SH-xPy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-K4-xKz">
+                                        <rect key="frame" x="30" y="30" width="354" height="244"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="80"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Gdi-K4-xKz" firstAttribute="leading" secondItem="3Fb-fe-HL5" secondAttribute="leading" constant="30" id="4w3-UC-obK"/>
                                     <constraint firstItem="Gdi-K4-xKz" firstAttribute="centerY" secondItem="3Fb-fe-HL5" secondAttribute="centerY" id="DYN-8w-dxw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gdi-K4-xKz" secondAttribute="trailing" constant="30" id="Ffh-cr-xBD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gdi-K4-xKz" secondAttribute="bottom" constant="30" id="Ypj-bb-Oop"/>
                                     <constraint firstItem="Gdi-K4-xKz" firstAttribute="centerX" secondItem="3Fb-fe-HL5" secondAttribute="centerX" id="q9P-0V-yFo"/>
+                                    <constraint firstItem="Gdi-K4-xKz" firstAttribute="top" secondItem="3Fb-fe-HL5" secondAttribute="top" constant="30" id="w66-wt-rRL"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-Aa-wi3" userLabel="Bottom Container">

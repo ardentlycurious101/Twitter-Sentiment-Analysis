@@ -56,7 +56,21 @@ class ViewController: UIViewController {
                         }
                     }
                     
-                    print(sentimentScore)
+                    if sentimentScore > 20 {
+                        self.sentimentLabel.text = "🥳"
+                    } else if sentimentScore > 10 {
+                        self.sentimentLabel.text = "😄"
+                    } else if sentimentScore > 0 {
+                        self.sentimentLabel.text = "🙂"
+                    } else if sentimentScore == 0 {
+                        self.sentimentLabel.text = "😐"
+                    } else if sentimentScore > -10 {
+                        self.sentimentLabel.text = "☹️"
+                    } else if sentimentScore > -20 {
+                        self.sentimentLabel.text = "😡"
+                    } else {
+                        self.sentimentLabel.text = "🤮"
+                    }
                     
                 } catch {
                     print("There was an error with making the prediction: \(error)")
