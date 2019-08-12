@@ -11,7 +11,7 @@ import SwifteriOS
 import CoreML
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     // IB Actions
 
@@ -24,9 +24,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tap)
     }
 
     @IBAction func predictPressed(_ sender: UIButton) {
+        fetchTweets()
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        searchTextField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        performPrediction()
+        return true
+    }
+    
+    func performPrediction() {
         fetchTweets()
     }
     
