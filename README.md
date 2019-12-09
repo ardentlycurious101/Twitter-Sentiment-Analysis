@@ -5,7 +5,7 @@ An iOS app that allows prompts users to enter any topic, and informs them about 
 * [Description](#Description)
 
 ### App Preview
-
+![App Preview](https://github.com/ardentlycurious101/Twitter-Sentiment-Analysis/blob/master/TwitterSentimentAnalysis.gif)
 
 ### Description
 * Created a natural language processing (NLP) model using CreateML by training the model with 100 tweets that are labeled “positive", “negative", or “neutral".
